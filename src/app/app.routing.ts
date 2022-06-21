@@ -11,10 +11,12 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ReelComponent } from './pages/reel/reel.component';
+import { AnimationComponent } from './pages/animation/animation.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'reel', pathMatch: 'full' },
     { path: 'reel',             component: ReelComponent },
+    { path: 'animation',        component: AnimationComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },

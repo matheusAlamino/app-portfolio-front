@@ -97,6 +97,14 @@
     /*     position: relative; */
 }
 
+.card-video {
+    padding: 25px;
+    border-radius: 0px;
+    background: #758184;
+    box-shadow: -50px 50px 100px #4e5658,
+    50px -50px 100px #9cacb0;
+}
+
 .navigation-example {
     background-image: url('../img/ilya-yakover.jpg');
     background-position: center center;

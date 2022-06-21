@@ -13,6 +13,10 @@ export class VimeoApiService {
     constructor(private http: HttpClient) { }
 
     getAll(): Observable<any> {
-        return this.http.get<any>(`${this.api.vimeo_rest}vimeo/GetAll`).pipe(map((response) => response));
+        return this.http.get<any>(`${this.api.vimeo_rest}vimeo/getAll`).pipe(map((response) => response));
+    }
+
+    getReel(): Observable<any> {
+        return this.http.get<any>(`${this.api.vimeo_rest}vimeo/getReel`).pipe(map((response) => response));
     }
 }

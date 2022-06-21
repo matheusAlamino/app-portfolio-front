@@ -64,6 +64,37 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         text-decoration: none;
     }
 }
+.video-title{
+    text-transform: uppercase;
+    margin-top: auto;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 115%;
+
+    letter-spacing: 0.065em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+    
+    font-variation-settings: 'slnt' 0;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.top-title {
+    text-transform: uppercase;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 115%;
+
+    letter-spacing: 0.065em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+
+    font-variation-settings: 'slnt' 0;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .title-uppercase{
     text-transform: uppercase;
 }

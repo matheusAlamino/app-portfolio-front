@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReelComponent } from './reel/reel.component';
+import { AnimationComponent } from './animation/animation.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,12 +14,14 @@ import { ReelComponent } from './reel/reel.component';
   declarations: [
       AboutMeComponent,
       ContactComponent,
-      ReelComponent
+      ReelComponent,
+      AnimationComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     NgbModule,
+    RouterModule
   ]
 })
 export class PagesModule { }

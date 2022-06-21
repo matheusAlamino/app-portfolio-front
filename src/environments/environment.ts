@@ -9,6 +9,7 @@ export const environment = {
     production: false,
     api: {
         local: `${protocolo}${url}/`,
-        vimeo_rest: `${protocolo}localhost:21022/api/v1/`
+        // vimeo_rest: `${protocolo}localhost:21262/`
+        vimeo_rest: `https://api-portofolio-back.vercel.app/`
     }
 };
