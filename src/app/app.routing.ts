@@ -17,12 +17,13 @@ const routes: Routes =[
     { path: '', redirectTo: 'reel', pathMatch: 'full' },
     { path: 'reel',             component: ReelComponent },
     { path: 'animation',        component: AnimationComponent },
+    { path: 'animation/:name',  component: AnimationComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'about-me',         component: AboutMeComponent },
-    { path: 'contact',         component: ContactComponent }
+    { path: 'contact',          component: ContactComponent }
 ];
 
 @NgModule({

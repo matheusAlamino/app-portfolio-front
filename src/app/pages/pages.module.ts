@@ -7,6 +7,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ReelComponent } from './reel/reel.component';
 import { AnimationComponent } from './animation/animation.component';
 import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
 
 
 
@@ -21,7 +24,9 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     NgbModule,
-    RouterModule
+    RouterModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ]
 })
 export class PagesModule { }

@@ -3,7 +3,7 @@
         style="background-image: url('./assets/img/cover-lipe.jpg');">
         <!-- <div class="filter"></div> -->
     </div>
-    <div class="section profile-content">
+    <div class="section profile-content" style="margin-bottom: -64px;">
         <div class="container">
             <div class="owner">
                 <div class="avatar">
@@ -24,72 +24,32 @@
                 </div>
             </div>
             <br />
-            <div class="nav-tabs-navigation">
-                <div class="nav-tabs-wrapper">
-                    <ngb-tabset [justify]="'center'">
-                        <ngb-tab title="Projects">
-                            <ng-template ngbTabContent>
-                                <div class="row following" id="follows">
-                                    <div class="col-md-6 ml-auto mr-auto">
-                                        <ul class="list-unstyled follows">
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg"
-                                                            alt="Circle Image"
-                                                            class="img-circle img-no-padding img-responsive">
-                                                    </div>
-                                                    <div class="col-md-7 col-sm-4 ml-auto">
-                                                        <h6>MPC<br /><small>Call of the Wild</small></h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-2 ml-auto mr-auto">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    checked="">
-                                                                <span class="form-check-sign"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <hr />
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg"
-                                                            alt="Circle Image"
-                                                            class="img-circle img-no-padding img-responsive">
-                                                    </div>
-                                                    <div class="col-md-7 col-sm-4 ml-auto">
-                                                        <h6>Banks<br /><small>Singer</small></h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-2 ml-auto mr-auto">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    checked="">
-                                                                <span class="form-check-sign"></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </ng-template>
-                        </ngb-tab>
-                        <ngb-tab title="Following">
-                            <ng-template ngbTabContent>
-                                <h3 class="text-muted">Not following anyone yet :(</h3>
-                                <br>
-                                <button class="btn btn-warning btn-round">Find artists</button>
-                            </ng-template>
-                        </ngb-tab>
-                    </ngb-tabset>
-                </div>
-            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+        <div class="container container-fluid-videos">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let pic of pictures">
+                    <div class="bg-image hover-overlay ripple">
+                        <a [routerLink]="['/animation', pic.name.trim()]">
+                            <img src="{{pic.thumbnail}}" class="img-thumbnail img-thumbnail-border" alt="..." />
+                        </a>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="container container-fluid-videos">
+            <owl-carousel-o [options]="customOptions2">
+                <ng-template carouselSlide *ngFor="let pic of pictures">
+                    <div class="bg-image hover-overlay ripple">
+                        <a [routerLink]="['/animation', pic.name.trim()]">
+                            <img src="{{pic.thumbnail}}" class="img-thumbnail img-thumbnail-border" alt="..." />
+                        </a>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
         </div>
     </div>
 </div>
