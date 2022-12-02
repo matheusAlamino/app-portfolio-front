@@ -28,3 +28,8 @@ export interface Size {
 export interface Tag {
     canonical: string;
 }
+
+export interface IThumbanail {
+  name: string;
+  pictures: Picture[];
+}

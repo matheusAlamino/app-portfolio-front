@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { IVideo } from 'app/interfaces/ivideo';
 import { VimeoApiService } from 'app/services/vimeo-api.service';
 
@@ -14,10 +15,12 @@ export class AnimationComponent implements OnInit {
     string_find_reel = 'Animation Reel_2021 - Felipe Iglesias';
     videos: IVideo[];
     Title = '';
+    Name = '';
     Description = '';
 
     constructor(private vimeoApiService: VimeoApiService,
-        private sanitizer: DomSanitizer) { }
+        private sanitizer: DomSanitizer,
+        private route: ActivatedRoute) { }
 
     ngOnInit(): void {
         this.getAllVideos()
@@ -26,7 +29,16 @@ export class AnimationComponent implements OnInit {
     getAllVideos() {
         this.vimeoApiService.getAll().subscribe(result => {
             this.videos = result.data;
-            this.watchVideo(0);
+
+            this.route.params.subscribe((params: any) => {
+                if (params.name) {
+                    this.Name = params.name
+                    const indexOfName = this.videos.findIndex((item) => item.name.trim() == this.Name);
+                    this.watchVideo(indexOfName);
+                } else {
+                    this.watchVideo(0);
+                }
+            });
         });
     }
 

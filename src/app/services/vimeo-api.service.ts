@@ -19,4 +19,8 @@ export class VimeoApiService {
     getReel(): Observable<any> {
         return this.http.get<any>(`${this.api.vimeo_rest}vimeo/getReel`).pipe(map((response) => response));
     }
+
+    getThumbnails(): Observable<any> {
+      return this.http.get<any>(`${this.api.vimeo_rest}vimeo/getThumbnails`).pipe(map((response) => response));
+    }
 }

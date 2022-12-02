@@ -14,15 +14,16 @@ import { ReelComponent } from './pages/reel/reel.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'reel', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'reel',             component: ReelComponent },
     { path: 'animation',        component: AnimationComponent },
+    { path: 'animation/:name',  component: AnimationComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
-    { path: 'about-me',         component: AboutMeComponent },
-    { path: 'contact',         component: ContactComponent }
+    { path: 'home',             component: AboutMeComponent },
+    { path: 'contact',          component: ContactComponent }
 ];
 
 @NgModule({
