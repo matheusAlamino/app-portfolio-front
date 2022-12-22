@@ -6,10 +6,12 @@ const url = 'localhost:4200'
 const protocolo = 'http://'
 
 export const environment = {
-    production: false,
-    api: {
-        local: `${protocolo}${url}/`,
-        // vimeo_rest: `${protocolo}localhost:21262/`
-        vimeo_rest: `https://api-portofolio-back.vercel.app/`
-    }
+  production: false,
+  api: {
+    local: `${protocolo}${url}/`,
+    // vimeo_rest: `${protocolo}localhost:21262/`
+    vimeo_rest: `https://api-portofolio-back.vercel.app/`,
+    // mail_manager: `${protocolo}localhost:3333/`
+    mail_manager: `https://api-email-manager.vercel.app/`
+  }
 };
