@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { IPictureThumbnail } from 'app/interfaces/ipicturethumbnail';
-import { IThumbanail, IVideo } from 'app/interfaces/ivideo';
+import { IThumbanail } from 'app/interfaces/ivideo';
 import { VimeoApiService } from 'app/services/vimeo-api.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -15,11 +14,11 @@ export class AboutMeComponent implements OnInit {
 
   constructor(private vimeoApiService: VimeoApiService,
     private translate: TranslateService) {
-    translate.addLangs(['en', 'fr']);
+    translate.addLangs(['en', 'pt']);
     translate.setDefaultLang('en');
 
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
+    translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
   }
 
   pictures: IPictureThumbnail[] = [];

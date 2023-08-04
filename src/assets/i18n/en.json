@@ -1,6 +1,19 @@
 {
-  "HOME": {
-    "TITLE": "Olá Angular",
-    "SELECT": "Change language"
+  "Home": {
+    "JobDescription": "Animation Creator",
+    "AboutMe": "Hello, I'm a Animator with a focus on bringing characters to Life. I've been working in the industry about 5 years, worked in many companies as MPC Film as a Character Animator in VFX, Vetor Zero with commercials, CasaBlanca with TV Novel, PixelZoo with Series, Reel FX with Feature Films and currently I'm with Agora Studio working on Cinematics. I had the luck to be part of many cool projects. Hope you enjoy it!",
+    "Profiency": "Profiency"
+  },
+  "Reel": {
+    "ReelDescription": "Here's my Reel of some projects that I've worked on throughout my career!",
+    "SoundsOn": "Sounds ON! (Use a Headphone to have a better experience)",
+    "MusicBy": "Music by:",
+    "SoundEngineering": "Sound engineering:",
+    "SeeAll": "See All Animations",
+    "AboutMe": "About Me",
+    "AboutMeDescription": "Spend your time getting to know me better and my proffesional experience",
+    "SeeMore": "See more",
+    "Contact": "Contact",
+    "ContactDescription": "Reach me with an email and I'll answer you as soon as possible"
   }
 }
