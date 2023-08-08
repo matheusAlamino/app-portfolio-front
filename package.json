@@ -29,6 +29,7 @@
     "@ng-bootstrap/ng-bootstrap": "15.1.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "4.5.3",
     "core-js": "3.8.1",
     "flag-icons": "^6.9.3",
