@@ -1,52 +1,53 @@
 <div class="wrapper">
-    <div class="page-header page-header-xs" data-parallax="true"
-        style="background-image: url('./assets/img/cover-lipe.jpg');">
-    </div>
+  <div class="page-header page-header-xs" data-parallax="true"
+    style="background-image: url('./assets/img/cover-lipe.jpg');">
+  </div>
 </div>
 <div class="main">
-    <div class="section text-center">
-        <div class="container container-fluid-videos">
-            <div class="row">
-                <div class="col-md-12 mr-auto ml-auto">
-                    <h2 class="title">Reel</h2>
-                    <h5 class="description">Here's my Reel of some projects that I've worked on throughout my career!</h5>
-                    <h6 class="description">Sounds ON! (Use a Headphone to have a better experience) <br> Music by: Felipe Iglesias <br> Sound engineering: Gabriel Iglesias</h6>
-                    <br>
-                    <div class="card-video">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <div [innerHtml]="video_reel"></div>
-                        </div>
-                        <br>
-                        <a [routerLink]="['/animation']" class="btn btn-danger btn-round">See All Animations</a>
-                    </div>
-                </div>
+  <div class="section text-center">
+    <div class="container container-fluid-videos">
+      <div class="row">
+        <div class="col-md-12 mr-auto ml-auto">
+          <h2 class="title">Reel</h2>
+          <h5 class="description">{{ 'Reel.ReelDescription' | translate }}</h5>
+          <h6 class="description">{{ 'Reel.SoundsOn' | translate }} <br> {{ 'Reel.MusicBy' | translate }} Felipe
+            Iglesias <br> {{'Reel.SoundEngineering' | translate }} Gabriel Iglesias</h6>
+          <br>
+          <div class="card-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div [innerHtml]="video_reel"></div>
             </div>
-            <br /><br />
-            <div class="row" style="flex-direction: row;justify-content: center;align-items: center;">
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-single-02"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">About Me</h4>
-                            <p class="description">Spend your time getting to know me better and my proffesional experience</p>
-                            <a [routerLink]="['/about-me']" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-email-85"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">Contact</h4>
-                            <p>Reach me with an email and I'll answer you as soon as possible</p>
-                            <a [routerLink]="['/contact']" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <br>
+            <a [routerLink]="['/animation']" class="btn btn-danger btn-round">{{ 'Reel.SeeAll' | translate }}</a>
+          </div>
         </div>
+      </div>
+      <br /><br />
+      <div class="row" style="flex-direction: row;justify-content: center;align-items: center;">
+        <div class="col-md-3">
+          <div class="info">
+            <div class="icon icon-danger">
+              <i class="nc-icon nc-single-02"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">{{ 'Reel.AboutMe' | translate }}</h4>
+              <p class="description">{{ 'Reel.AboutMeDescription' | translate }}</p>
+              <a [routerLink]="['/home']" class="btn btn-link btn-danger">{{ 'Reel.SeeMore' | translate }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info">
+            <div class="icon icon-danger">
+              <i class="nc-icon nc-email-85"></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">{{ 'Reel.Contact' | translate }}</h4>
+              <p>{{ 'Reel.ContactDescription' | translate }}</p>
+              <a [routerLink]="['/contact']" class="btn btn-link btn-danger">{{ 'Reel.SeeMore' | translate }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>

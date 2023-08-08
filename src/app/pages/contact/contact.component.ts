@@ -11,12 +11,12 @@ export class ContactComponent implements OnInit {
   focus: any;
   focus1: any;
 
-  constructor(private vimeoApiService: VimeoApiService) { }
-
-  ngOnInit(): void {
-      this.vimeoApiService.getAll().subscribe(result => {
-            console.log(result);
-        });
+  constructor(private vimeoApiService: VimeoApiService) {
   }
 
+  ngOnInit(): void {
+    this.vimeoApiService.getAll().subscribe(result => {
+      console.log(result);
+    });
+  }
 }

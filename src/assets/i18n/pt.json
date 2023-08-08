@@ -1,0 +1,36 @@
+{
+  "Home": {
+    "JobDescription": "Animador Profissional",
+    "AboutMe": "Olá, eu sou um animador que tem como objetivo trazer vida aos personagens. Tenho trabalhado na indústria cerca de 5 anos, trabalhei em muitas empresas, como MPC Film, como Animador de Personagem em VFX, Vetor Zero com comerciais, CasaBlanca com novela, PixelZoo com séries, Reel FX com feature films e atualmente estou na Agora Studio trabalhando em Cinematics. Tive o privilégio de participar de muitos projetos interessantes. Espero que aprecie!",
+    "Profiency": "Proficiência"
+  },
+  "Reel": {
+    "ReelDescription": "Aqui você pode ver minha Reel com alguns projetos que já trabalhei na minha carreira!",
+    "SoundsOn": "Aumente o VOLUME! (Use um fone para uma experiência melhor)",
+    "MusicBy": "Música:",
+    "SoundEngineering": "Produção Musical:",
+    "SeeAll": "Ver todas animações",
+    "AboutMe": "Sobre",
+    "AboutMeDescription": "Tire um tempo para me conhecer melhor e minha experiência profissional",
+    "SeeMore": "Ver mais",
+    "Contact": "Contato",
+    "ContactDescription": "Me envie um e-mail e responderei assim que possível"
+  },
+  "Animations": {
+    "Intro": "Veja minhas Reel de projetos profissionais que tenho trabalhado, como de projetos pessoais também!",
+    "AllVideos": "Todos Vídeos"
+  },
+  "Contact": {
+    "KeepTouch": "Mantenha Contato?",
+    "Name": "Nome",
+    "Message": "Mensagem",
+    "SendMessage": "Enviar Mensagem",
+    "TellToughts": "Nos diga seus pensamento e ideias..."
+  },
+  "Header": {
+    "Contact": "Contato",
+    "Courses": "Cursos",
+    "Illustrations": "Ilustrações",
+    "Projects": "Projetos"
+  }
+}
