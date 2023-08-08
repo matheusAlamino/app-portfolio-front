@@ -17,14 +17,19 @@ export class NavbarComponent implements OnInit {
     this.sidebarVisible = false;
     translate.addLangs(['en', 'pt']);
     translate.setDefaultLang('en');
-
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
   }
 
   ngOnInit() {
     const navbar: HTMLElement = this.element.nativeElement;
     this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
+
+    const languageLocalStorage = localStorage.getItem('language');
+    if (languageLocalStorage) {
+      this.translate.use(languageLocalStorage);
+    } else {
+      const browserLang = this.translate.getBrowserLang();
+      this.translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
+    }
   }
   sidebarOpen() {
     const toggleButton = this.toggleButton;
@@ -73,5 +78,10 @@ export class NavbarComponent implements OnInit {
     else {
       return false;
     }
+  }
+
+  changeLanguage(language: string) {
+    localStorage.setItem('language', language);
+    this.translate.use(language);
   }
 }

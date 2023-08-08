@@ -3,7 +3,6 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { IVideo } from 'app/interfaces/ivideo';
 import { VimeoApiService } from 'app/services/vimeo-api.service';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-animation',
@@ -21,17 +20,11 @@ export class AnimationComponent implements OnInit {
 
   constructor(private vimeoApiService: VimeoApiService,
     private sanitizer: DomSanitizer,
-    private route: ActivatedRoute,
-    private translate: TranslateService) {
-    translate.addLangs(['en', 'pt']);
-    translate.setDefaultLang('en');
-
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
+    private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.getAllVideos()
+    this.getAllVideos();
   }
 
   getAllVideos() {

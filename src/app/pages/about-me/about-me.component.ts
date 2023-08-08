@@ -12,14 +12,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor(private vimeoApiService: VimeoApiService,
-    private translate: TranslateService) {
-    translate.addLangs(['en', 'pt']);
-    translate.setDefaultLang('en');
-
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
-  }
+  constructor(private vimeoApiService: VimeoApiService) { }
 
   pictures: IPictureThumbnail[] = [];
   thumbnails: IThumbanail[];

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { IVideo } from 'app/interfaces/ivideo';
 import { VimeoApiService } from 'app/services/vimeo-api.service';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reel',
@@ -16,14 +15,7 @@ export class ReelComponent implements OnInit {
   videoReel: IVideo
 
   constructor(private vimeoApiService: VimeoApiService,
-    private sanitizer: DomSanitizer,
-    private translate: TranslateService) {
-    translate.addLangs(['en', 'pt']);
-    translate.setDefaultLang('en');
-
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|pt/) ? browserLang : 'en');
-  }
+    private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.vimeoApiService.getReel().subscribe(result => {
