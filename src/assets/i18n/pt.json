@@ -15,5 +15,21 @@
     "SeeMore": "Ver mais",
     "Contact": "Contato",
     "ContactDescription": "Me envie um e-mail e responderei assim que possível"
+  },
+  "Animations": {
+    "Intro": "Veja minhas Reel de projetos profissionais que tenho trabalhado, como de projetos pessoais também!",
+    "AllVideos": "Todos Vídeos"
+  },
+  "Contact": {
+    "KeepTouch": "Mantenha Contato?",
+    "Name": "Nome",
+    "Message": "Mensagem",
+    "SendMessage": "Enviar Mensagem",
+    "TellToughts": "Nos diga seus pensamento e ideias..."
+  },
+  "Header": {
+    "Contact": "Contato",
+    "Courses": "Cursos",
+    "Illustrations": "Ilustrações"
   }
 }

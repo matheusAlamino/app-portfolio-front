@@ -1,83 +1,81 @@
 <div class="wrapper">
-    <div class="page-header page-header-xs" data-parallax="true"
-        style="background-image: url('./assets/img/cover-lipe.jpg');">
-    </div>
+  <div class="page-header page-header-xs" data-parallax="true"
+    style="background-image: url('./assets/img/cover-lipe.jpg');">
+  </div>
 </div>
 <div class="main">
-    <div class="section text-center">
-        <div class="container container-fluid-videos">
-            <div class="row">
-                <div class="col-md-12 mr-auto ml-auto">
-                    <h2 class="title">Projects Reel</h2>
-                    <h5 #target class="description">Follow my Reel from the projects that I've worked on and personal projects as well!</h5>
-                    <br>
-                    <div class="card-video">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <div [innerHtml]="video_reel"></div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-12 ml-auto mr-auto text-left">
-                                <h4 class="info-title video-title">{{Title}}</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ml-auto mr-auto text-left">
-                                <p class="description">{{Description}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-video">
-                        <div class="row">
-                            <div class="col-md-12 ml-auto mr-auto text-left mb-2">
-                                <h4 class="info-title top-title">All Videos</h4>
-                            </div>
-                        </div>
-                        <div *ngFor="let videoItem of videos;let i = index;">
-                            <div *ngIf="i % 4 == 0" class="row">
-                                <div class="col-lg-3 col-md-6 mb-4">
-                                    <div class="card-wrapper">
-                                        <img class="img-fluid z-depth-1" src="{{videoItem.pictures.sizes[videoItem.pictures.sizes.length - 1].link}}"
-                                                alt="image">
-                                        <div class="info-video">
-                                            <a (click)="watchVideo(i, target)"><i class="fa fa-play fa-4"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div *ngIf="i + 1 < videos.length" class="col-lg-3 col-md-6 mb-4">
-                                    <div class="card-wrapper">
-                                        <img class="img-fluid z-depth-1" src="{{videos[i + 1].pictures.sizes[videos[i + 1].pictures.sizes.length - 1].link}}"
-                                                alt="image">
-                                        <div class="info-video">
-                                            <a (click)="watchVideo(i + 1, target)"><i class="fa fa-play fa-4"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div *ngIf="i + 2 < videos.length" class="col-lg-3 col-md-6 mb-4">
-                                    <div class="card-wrapper">
-                                        <img class="img-fluid z-depth-1"
-                                                src="{{videos[i + 2].pictures.sizes[videos[i + 2].pictures.sizes.length - 1].link}}"
-                                                alt="image">
-                                        <div class="info-video">
-                                            <a (click)="watchVideo(i + 2, target)"><i class="fa fa-play fa-4"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div *ngIf="i + 3 < videos.length" class="col-lg-3 col-md-6 mb-4">
-                                    <div class="card-wrapper">
-                                        <img class="img-fluid z-depth-1"
-                                                src="{{videos[i + 3].pictures.sizes[videos[i + 3].pictures.sizes.length - 1].link}}"
-                                                alt="image">
-                                        <div class="info-video">
-                                            <a (click)="watchVideo(i + 3, target)"><i class="fa fa-play fa-4"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="section text-center">
+    <div class="container container-fluid-videos">
+      <div class="row">
+        <div class="col-md-12 mr-auto ml-auto">
+          <h2 class="title">Projects Reel</h2>
+          <h5 #target class="description">{{ 'Animations.Intro' | translate }}</h5>
+          <br>
+          <div class="card-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div [innerHtml]="video_reel"></div>
             </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 ml-auto mr-auto text-left">
+                <h4 class="info-title video-title">{{Title}}</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 ml-auto mr-auto text-left">
+                <p class="description">{{Description}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-video">
+            <div class="row">
+              <div class="col-md-12 ml-auto mr-auto text-left mb-2">
+                <h4 class="info-title top-title">{{ 'Animations.AllVideos' | translate }}</h4>
+              </div>
+            </div>
+            <div *ngFor="let videoItem of videos;let i = index;">
+              <div *ngIf="i % 4 == 0" class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card-wrapper">
+                    <img class="img-fluid z-depth-1"
+                      src="{{videoItem.pictures.sizes[videoItem.pictures.sizes.length - 1].link}}" alt="image">
+                    <div class="info-video">
+                      <a (click)="watchVideo(i, target)"><i class="fa fa-play fa-4"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="i + 1 < videos.length" class="col-lg-3 col-md-6 mb-4">
+                  <div class="card-wrapper">
+                    <img class="img-fluid z-depth-1"
+                      src="{{videos[i + 1].pictures.sizes[videos[i + 1].pictures.sizes.length - 1].link}}" alt="image">
+                    <div class="info-video">
+                      <a (click)="watchVideo(i + 1, target)"><i class="fa fa-play fa-4"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="i + 2 < videos.length" class="col-lg-3 col-md-6 mb-4">
+                  <div class="card-wrapper">
+                    <img class="img-fluid z-depth-1"
+                      src="{{videos[i + 2].pictures.sizes[videos[i + 2].pictures.sizes.length - 1].link}}" alt="image">
+                    <div class="info-video">
+                      <a (click)="watchVideo(i + 2, target)"><i class="fa fa-play fa-4"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="i + 3 < videos.length" class="col-lg-3 col-md-6 mb-4">
+                  <div class="card-wrapper">
+                    <img class="img-fluid z-depth-1"
+                      src="{{videos[i + 3].pictures.sizes[videos[i + 3].pictures.sizes.length - 1].link}}" alt="image">
+                    <div class="info-video">
+                      <a (click)="watchVideo(i + 3, target)"><i class="fa fa-play fa-4"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

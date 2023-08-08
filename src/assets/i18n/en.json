@@ -15,5 +15,21 @@
     "SeeMore": "See more",
     "Contact": "Contact",
     "ContactDescription": "Reach me with an email and I'll answer you as soon as possible"
+  },
+  "Animations": {
+    "Intro": "Follow my Reel from the projects that I've worked on and personal projects as well!",
+    "AllVideos": "All Videos"
+  },
+  "Contact": {
+    "KeepTouch": "Keep in touch?",
+    "Name": "Name",
+    "Message": "Message",
+    "SendMessage": "Send Message",
+    "TellToughts": "Tell us your thoughts and feelings..."
+  },
+  "Header": {
+    "Contact": "Contact",
+    "Courses": "Courses",
+    "Illustrations": "Illustrations"
   }
 }
