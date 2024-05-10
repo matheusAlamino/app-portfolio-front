@@ -35,7 +35,7 @@
     "jquery": "3.5.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-nouislider": "2.0.0",
-    "ngx-owl-carousel-o": "^16.0.0",
+    "ngx-owl-carousel-o": "^17.0.0",
     "nouislider": "15.7.1",
     "popper.js": "1.16.1",
     "rxjs": "6.6.3",
